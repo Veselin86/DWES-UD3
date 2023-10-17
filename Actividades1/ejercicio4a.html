@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <style>
+        div{
+            text-align: left; 
+            width: 500px; 
+            border: 2px solid orange;
+            padding: 3%;
+        }
+        h3 {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="ejercicio4b.php" method="get" name="formulario">
+        <div>
+            <h3>Ejercicio4a.html</h3>
+            <h3>Formulario Datos personales</h3>
+
+            <label for="nombre">Escriba su nombre:</label>
+            <input style="width: 350px;" type="text" name="nombre" id="nombre"><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="hombre" value="Hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="mujer" value="Mujer">
+            <label for="mujer">Mujer</label><br>
+
+            <label for="edad">Edad:</label>
+            <select style="width: 150px" name="edad" id="edad">
+                <option value="sin especificar" selected>Sin especificar</option>
+                <script>
+                    for (let i = 0; i <= 100; i++) {
+                        document.write('<option value = "' + i + '">' + i + '  años</option>');
+                    }
+                </script>                
+            </select><br>
+
+            <label for="peso">Peso kg:</label>
+            <input style="width: 50px;" type="number" name="peso" id="peso"><br>
+
+            <label for="estCivil">Estado civil:</label>
+            <input type="radio" name="estCivil" id="soltero" value="Soltero">
+            <label for="soltero">Soltero</label>
+            <input type="radio" name="estCivil" id="casado" value="Casado">
+            <label for="casado">Casado</label>
+            <input type="radio" name="estCivil" id="otro" value="Otro">
+            <label for="otro">Otro</label><br>
+
+            <label for="aficiones">Aficiones:</label><br>
+            <input type="checkbox" id="aficion1" name="aficiones[]" value="Cine">
+            <label for="aficion1">Cine</label><br>
+            <input type="checkbox" id="aficion2" name="aficiones[]" value="Literatura">
+            <label for="aficion2">Literatura</label><br>
+            <input type="checkbox" id="aficion3" name="aficiones[]" value="Tebeos">
+            <label for="aficion3">Tebeos</label><br>
+            <input type="checkbox" id="aficion4" name="aficiones[]" value="Deporte">
+            <label for="aficion4">Deporte</label><br>
+            <input type="checkbox" id="aficion5" name="aficiones[]" value="Musica">
+            <label for="aficion5">Musica</label><br>
+            <input type="checkbox" id="aficion6" name="aficiones[]" value="Television">
+            <label for="aficion6">Television</label><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
+    </form>
+
+</body>
+
+</html>

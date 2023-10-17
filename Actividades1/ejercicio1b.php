@@ -12,6 +12,7 @@
 <body>
 
     <?php
+
     if ($_POST['numero1'] && $_POST['numero2']) {
         $numero1 = $_POST['numero1'];
         $numero2 = $_POST['numero2'];
@@ -20,6 +21,7 @@
     } else {
         echo "Por favor, ingrese ambos números, diferentes de '0'";
     }
+    
     ?>
 
     <a href="ejercicio1a.html"><br>Pincha en este enlace para volver atras</a>
