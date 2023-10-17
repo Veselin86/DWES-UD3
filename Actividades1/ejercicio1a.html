@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1a</title>
+
+    <style>
+
+        div{
+            text-align: center; 
+            width: 10%; 
+            border: 2px solid black; 
+            padding: 1%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form action="ejercicio1b.php" method="POST" name="multiplicar">
+        <div>
+            <h3>CALCULADORA</h3>
+
+            <label for="numero1">Número 1:</label>
+            <input type="number" name="numero1" id="numero1" required><br><br>
+
+            <label for="numero2">Número 2:</label>
+            <input type="number" name="numero2" id="numero2" required><br><br>
+
+            <input type="radio" name="sumar" id="sumar" value="+">
+            <label for="sumar">+</label>
+
+            <input type="radio" name="restar" id="restar" value="-">
+            <label for="restar">-</label>
+
+            <input type="radio" name="multiplicar" id="multiplicar" value="*">
+            <label for="multiplicar">*</label>
+
+            <input type="radio" name="dividir" id="dividir" value="/">
+            <label for="dividir">/</label><br><br>
+
+            <input type="submit" value="Calcular">
+        </div>
+    </form>
+
+</body>
+
+</html>
