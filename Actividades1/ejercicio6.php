@@ -1,9 +1,9 @@
 <?php
 
     class Mamifero {
-        protected $especie;
-        protected $sonido;
-        protected $familia;
+        protected string $especie;
+        protected string $sonido;
+        protected string $familia;
 
         public function __construct($especie, $sonido) {
             $this -> especie = $especie;
